@@ -1,0 +1,33 @@
+/* form.css */
+.center-container form {
+    background-color: #fdfdf4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+  }
+  
+  form fieldset {
+    border: 2px solid #a44c1c;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  form legend {
+    font-weight: bold;
+    color: #a44c1c;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #696f15;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  

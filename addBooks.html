@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Library.">
+        <meta name="author" content="Julieta Cárdena">
+        <title>My library</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="books.css">
+        <link rel="icon" type="image/png" href="imagenes/favicon.png">
+        <link rel="stylesheet" href="addBooks.css">
+      </head> 
+    <body>
+      <!--buscador-logo-links-->
+      <header class="top-header">
+       <div class="top-header-container">
+        <div class="header-left">
+          <a href="./main.html" class="logo">
+            <img src="./imagenes/gato.jpg" width="90" >
+          </a>
+          <nav class="nav-links">
+            <a href="./main.html">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Genres</a>
+            <a href="#">Read</a>
+            <a href="./addBooks.html">Add</a>
+          </nav>
+        </div>
+          <div class="header-right">
+            <div class="search-box">
+              <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-section">
+              <a href="./usuario.html">
+                <img src="./imagenes/usuario.png" alt="usuario" width="50px">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+        <div class="body-container">
+          
+           <!--menu del costado izquierdo-->
+           
+            <div class="left-container">
+              
+              <ul class="list-contents">
+                <h2>Contenidos</h2>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Best plot twist</a></li>
+                <li><a href="#">No recommend</a></li>
+                <li><a href="#">Easy read</a></li>
+              </ul>
+            </div>
+          
+          <!--main central-->
+          
+            <div class="center-container">
+              <div class="articles-container">
+                <form action="tu_ruta_de_procesamiento" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Book Information</legend>
+            
+                    <label for="nameB" >Name:</label><br>
+                    <input type="text" id="nameB" name="nameB" required><br>
+            
+                    <label for="authorB">Author:</label><br>
+                    <input type="text" id="authorB" name="authorB" required><br>
+            
+                    <label for="languageB">Language:</label><br>
+                    <select id="language" name="language"required>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Turkish">Turkish</option>
+                    </select><br>
+            
+                    <label for="genreB">Genre:</label><br>
+                    <input type="text" id="genreB" name="genreB" list="genresB" required><br>
+
+                        <datalist id="genresB">
+                        <option value="Fantasy">
+                        <option value="Science Fiction">
+                        <option value="Mystery">
+                        <option value="Thriller">
+                        <option value="Romance">
+                        <option value="Historical Fiction">
+                        <option value="Horror">
+                        <option value="Biography">
+                        <option value="Self-help">
+                        <option value="Non-fiction">
+                        <option value="Young Adult">
+                        <option value="Children's">
+                        <option value="Adventure">
+                        <option value="Graphic Novel">
+                        <option value="Classic">
+                        <option value="Contemporary">
+                        <option value="Memoir">
+                        <option value="Dystopian">
+                        <option value="Paranormal">
+                        <option value="Crime">
+                        <option value="Psychological Thriller">
+                        <option value="Poetry">
+                        <option value="Drama">
+                        <option value="Satire">
+                        <option value="Spirituality">
+                        </datalist><br>
+
+                    <label for="yearB">Publication year:</label><br>
+                    <input type="number" id="yearB" name="yearB" min="1000" max="2099" step="1" placeholder="2025" value="2025"><br>
+            
+                    <label for="descriptionB">Description:</label><br>
+                    <textarea id="descriptionB" name="descriptionB" rows="15" cols="30">Description of the book: 
+                    </textarea><br>
+            
+                </fieldset>
+            
+                    <label for="coverB">Upload cover:</label><br>
+                    <input type="file" id="coverB" name="coverB" accept="image/*" required><br>
+            
+                    <label for="archiveB">Upload book file:</label><br>
+                    <input type="file" id="archiveB" name="archiveB" accept="file" required><br>
+                    <button>Agregar</button>
+                </form>
+              </div>
+            </div>
+          
+          
+          <!--dibujo del costado derecho-->
+          
+            <div class="right-container">
+              
+            </div>
+        
+      
+        </div>   
+        <footer class="footer-container">
+          <div class="footer-content">
+            <img src="imagenes/favicon.png" alt="Logo" class="footer-logo">
+            <nav class="footer-nav">
+              <a href="#request">Request Book</a>
+              <a href="#contact">Contact Us</a>
+            </nav>
+          </div>
+        </footer>
+    </body>  
+</html>
